@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        header {
+            position: relative;
+            background-color: red;
+            text-align: right;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 12px;
+            padding-right: 50px;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: gray;
+            height: auto;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 10px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #333;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            min-width: 100px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: skyblue;
+            padding: 8px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header>Demo of Dropdown</header>
+<div class="navbar">
+  <a href="#">Link 1</a>
+  <div class="dropdown">
+    <button class="dropbtn">Link 2</button>
+    <div class="dropdown-content">
+      <a href="#">DD_Link_1</a>
+      <a href="#">DD_Link_2</a>
+      <a href="#">DD_Link_3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Link 3</button>
+    <div class="dropdown-content">
+      <a href="#">DD_Link_1</a>
+      <a href="#">DD_Link_2</a>
+      <a href="#">DD_Link_3</a>
+    </div>
+  </div> 
+</div>
+</body>
+</html>
+
